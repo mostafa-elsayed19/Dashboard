@@ -817,6 +817,35 @@ ul {
 	border-top: 1px solid #eee;
 }
 
+/* || PLANS PAGE */
+.plans {
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.plans__header {
+	font-size: 32px;
+	border: 3px solid white;
+	outline: 3px solid;
+}
+.plans__header__free {
+	outline-color: var(--green-color);
+}
+.plans__header__basic {
+	outline-color: var(--blue-color);
+}
+.plans__header__premium {
+	outline-color: var(--orange-color);
+}
+.plans__header span:first-child {
+	font-size: 24px;
+}
+.plans__box li {
+	border-bottom: 1px solid #eee;
+	padding-top: 10px;
+}
+.plans__box li > i {
+	cursor: pointer;
+}
+
 /* || ANIMATIONS */
 @keyframes change-color {
 	from {
@@ -941,6 +970,11 @@ ul {
 	.files {
 		flex-direction: column;
 		align-items: normal;
+	}
+
+	/* || PLANS PAGE */
+	.plans {
+		grid-template-columns: minmax(250px, 1fr);
 	}
 }
 
