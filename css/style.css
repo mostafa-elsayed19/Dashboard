@@ -685,6 +685,45 @@ ul {
 	width: 250px;
 }
 
+/* || COURSES */
+.courses {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses__course__box .courses__course__instructor {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	border: 2px solid white;
+	padding: 2px;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.courses__course__box .courses__course__cover {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.courses__course__data {
+	min-height: 150px;
+	max-height: 150px;
+}
+.courses__course__data h3 {
+	font-size: 18px;
+}
+.courses__course__data p {
+	font-size: 16px;
+}
+.courses__course__info {
+	border-top: 1px solid #eee;
+}
+.courses__course__info > span {
+	position: absolute;
+	top: -13.44px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 /* || ANIMATIONS */
 @keyframes change-color {
 	from {
@@ -732,7 +771,7 @@ ul {
 
 	/* || SETTINGS */
 	.settings {
-		grid-template-columns: minmax(100px, 1fr);
+		grid-template-columns: minmax(200px, 1fr);
 		margin-inline: 10px;
 		gap: 10px;
 	}
@@ -775,6 +814,11 @@ ul {
 	.projects__project__progress {
 		margin: 0 auto;
 		margin-bottom: 20px;
+	}
+
+	/* || COURSES */
+	.courses {
+		grid-template-columns: minmax(100px, 1fr);
 	}
 }
 
