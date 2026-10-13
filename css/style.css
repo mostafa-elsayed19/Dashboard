@@ -785,6 +785,15 @@ ul {
 .files__stats__excel {
 	background-color: rgb(245 158 11 / 20%);
 }
+.files__stats__upload {
+	transition: var(--main-transition-duration);
+}
+.files__stats__upload:hover {
+	background-color: var(--blue-alt-color);
+}
+.files__stats__upload:hover i {
+	animation: bounce 1s infinite alternate;
+}
 /* FILES CONTENT */
 .files__content {
 	flex: 1;
@@ -815,6 +824,22 @@ ul {
 	}
 	to {
 		background-color: #fff;
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-9px);
+	}
+	60% {
+		transform: translateY(-5px);
 	}
 }
 
