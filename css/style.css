@@ -646,7 +646,6 @@ ul {
 /* || LATEST ACTIVITES WIDGET */
 .profile__activites {
 	flex-grow: 2;
-	min-width: 600px;
 }
 .profile__activities__box:not(:last-of-type) {
 	border-bottom: 1px solid #eee;
