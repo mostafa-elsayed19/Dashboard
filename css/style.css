@@ -769,7 +769,14 @@ ul {
 		width: 100%;
 	}
 
-	/* || SETTINGS */
+	/* || PROJECTS WIDGET */
+	.projects {
+		min-width: 200px;
+		width: calc(100% - 20px);
+		margin-left: 10px;
+	}
+
+	/* || SETTINGS PAGE*/
 	.settings {
 		grid-template-columns: minmax(200px, 1fr);
 		margin-inline: 10px;
