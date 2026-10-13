@@ -877,8 +877,6 @@ ul {
 	/* || UTILITIES */
 	.wrapper {
 		grid-template-columns: minmax(200px, 1fr);
-		margin-right: 10px;
-		margin-left: 10px;
 		gap: 10px;
 	}
 	/* || SIDEBAR */
@@ -917,12 +915,12 @@ ul {
 	/* || SETTINGS PAGE*/
 	.settings {
 		grid-template-columns: minmax(200px, 1fr);
-		margin-inline: 10px;
 		gap: 10px;
 	}
 	/* BACKUP WIDGET */
 	.settings__backup__servers {
 		flex-wrap: wrap;
+		gap: 5px;
 	}
 	.settings__backup__server:not(:last-of-type) {
 		margin-bottom: 15px;
@@ -963,6 +961,11 @@ ul {
 
 	/* || COURSES PAGE */
 	.courses {
+		grid-template-columns: minmax(100px, 1fr);
+	}
+
+	/* || FRIENDS PAGE */
+	.friends {
 		grid-template-columns: minmax(100px, 1fr);
 	}
 
