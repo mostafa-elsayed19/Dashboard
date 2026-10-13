@@ -654,6 +654,37 @@ ul {
 	width: 75px;
 }
 
+/* || PROJECTS PAGE */
+.projects__page {
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.projects__project__date {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.projects__project__team {
+	margin-top: 40px;
+}
+.projects__project__team img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.projects__project__team img:not(:first-of-type) {
+	margin-left: -20px;
+}
+.projects__project__tools {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	justify-content: flex-end;
+}
+.projects__project__progress {
+	height: 8px;
+	width: 250px;
+}
+
 /* || ANIMATIONS */
 @keyframes change-color {
 	from {
@@ -730,7 +761,21 @@ ul {
 	.profile__skills__box {
 		justify-content: center;
 	}
-	/* || ACTIVITES WIDGET */
+
+	/* || PROJECTS PAGE */
+	.projects__page {
+		grid-template-columns: minmax(100px, 1fr);
+	}
+	.projects__project__tools li {
+		width: fit-content;
+	}
+	.projects__project__tools li:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+	.projects__project__progress {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
 }
 
 @media (min-width: 768px) {
