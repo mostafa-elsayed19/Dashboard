@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard - Settings</title>
+		<link rel="shortcut icon" href="images/title.svg" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/a0cd21b4c8.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/framework.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="page d-flex">
+			<!-- SIDEBAR -->
+			<aside class="sidebar bg-white p-20 p-relative">
+				<h3 class="p-relative text-center mt-0 hide-mobile">Dashboard</h3>
+				<ul>
+					<li>
+						<a
+							href="index.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-regular fa-chart-bar fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="settings.html"
+							class="active d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-solid fa-gear fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Settings</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="profile.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-regular fa-user fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Profile</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="projects.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-solid fa-diagram-project fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Projects</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="courses.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-solid fa-graduation-cap fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Courses</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="friends.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-solid fa-user-group fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Friends</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="files.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-regular fa-file fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Files</span>
+						</a>
+					</li>
+					<li>
+						<a
+							href="plans.html"
+							class="d-flex align-center fs-14 c-black rad-6 p-10"
+						>
+							<i class="fa-solid fa-clipboard-list fa-fw"></i>
+							<span class="fs-14 ml-10 hide-mobile">Plans</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+
+			<main class="content w-full">
+				<!-- || HEADER -->
+				<header class="header bg-white p-15 between-flex">
+					<section class="header__search p-relative">
+						<input
+							type="search"
+							placeholder="Search..."
+							class="b1-grey rad-10 ml-5 p-10"
+						/>
+					</section>
+					<section class="header__icons d-flex align-center">
+						<span class="header__notification p-relative">
+							<i class="fa-regular fa-bell fa-lg"></i>
+						</span>
+						<img src="images/avatar.png" alt="Avatar" class="ml-10" />
+					</section>
+				</header>
+
+				<h1 class="p-relative">Settings</h1>
+				<!-- || SETTINGS PAGE CONTENT -->
+				<div class="settings m-20 d-grid gap-20">
+					<!-- || SETTINGS BOX WIDGET -->
+					<article class="p-20 bg-white rad-10">
+						<h2 class="mb-10">Site Control</h2>
+						<p class="mb-20 c-grey fs-15">
+							Control the website if there is maintenance
+						</p>
+						<section class="between-flex mb-15">
+							<div>
+								<span>Website Control</span>
+								<p class="c-grey mt-5 fs-13">
+									Open/Close Website And Type The Reason
+								</p>
+							</div>
+							<div>
+								<label>
+									<input
+										type="checkbox"
+										class="toggle-checkbox"
+										checked
+									/>
+									<div class="toggle-switch"></div>
+								</label>
+							</div>
+						</section>
+						<textarea
+							class="settings__close__message b-none d-block w-full p-10 rad-6"
+							placeholder="Close Message.."
+						></textarea>
+					</article>
+
+					<!-- || GENERAL INFO WIDGET -->
+					<article class="p-20 bg-white rad-10">
+						<h2 class="mb-10">General Info</h2>
+						<p class="mb-20 c-grey fs-15">
+							General information about your account
+						</p>
+						<section class="mb-10">
+							<label class="d-block mb-5 c-grey fs-14" for="f_name"
+								>First Name</label
+							>
+							<input
+								class="b1-grey d-block w-full p-10 rad-6 fs-14"
+								type="text"
+								id="f_name"
+								name="First Name"
+								placeholder="Mostafa"
+							/>
+						</section>
+						<section class="mb-10">
+							<label class="d-block mb-5 c-grey fs-14" for="l_name"
+								>Last Name</label
+							>
+							<input
+								class="b1-grey d-block w-full p-10 rad-6 fs-14"
+								type="text"
+								id="l_name"
+								name="Last Name"
+								placeholder="El-Sayed"
+							/>
+						</section>
+						<section>
+							<label for="email" class="d-block mb-5 c-grey fs-14"
+								>Email</label
+							>
+							<input
+								type="email"
+								class="settings__email b1-grey p-10 rad-6 fs-14 mr-20"
+								value="mostafa@co.com"
+								disabled
+							/>
+							<a class="c-blue fs-15" href="#">Change</a>
+						</section>
+					</article>
+
+					<!-- || SECURITY INFO WIDGET -->
+					<article class="p-20 bg-white rad-10">
+						<h2 class="mb-10">Security Info</h2>
+						<p class="mb-20 c-grey fs-15">
+							Security information about your account
+						</p>
+						<section
+							class="settings__security__box pb-20 mt-20 between-flex"
+						>
+							<div>
+								<span class="d-block mb-5">Password</span>
+								<p class="c-grey fs-13">Last Change On 25/10/2021</p>
+							</div>
+							<a
+								href="#"
+								class="settings__password__button btn-shape bg-blue c-white fs-15"
+								>Change</a
+							>
+						</section>
+						<section
+							class="settings__security__box pb-20 mt-20 between-flex"
+						>
+							<div>
+								<span class="d-block mb-5"
+									>Two-Factor Authentication</span
+								>
+								<p class="c-grey fs-13">Enable/Disable The Feature</p>
+							</div>
+							<label>
+								<input
+									type="checkbox"
+									class="toggle-checkbox"
+									checked
+								/>
+								<div class="toggle-switch"></div>
+							</label>
+						</section>
+						<section class="settings__security__box mt-20 between-flex">
+							<div>
+								<span class="d-block mb-5">Devices</span>
+								<p class="c-grey fs-13">Check The Login Devices List</p>
+							</div>
+							<a href="#" class="btn-shape bg-eee fs-15">Devices</a>
+						</section>
+					</article>
+
+					<!-- || SOCIAL INFO WIDGET -->
+					<article class="p-20 bg-white rad-10">
+						<h2 class="mb-10">Social Info</h2>
+						<p class="mb-20 c-grey fs-15">Social media information</p>
+						<section
+							class="settings__social__box b1-grey d-flex align-center p-relative rad-6 mb-15"
+						>
+							<i class="fa-brands fa-twitter bg-eee h-full rad-6"></i>
+							<input
+								class="w-full p-10 bg-eee b-none rad-6"
+								type="text"
+								placeholder="Twitter username"
+							/>
+						</section>
+						<section
+							class="settings__social__box b1-grey d-flex align-center p-relative rad-6 mb-15"
+						>
+							<i class="fa-brands fa-facebook-f bg-eee h-full rad-6"></i>
+							<input
+								class="w-full p-10 bg-eee b-none rad-6"
+								type="text"
+								placeholder="Facebook username"
+							/>
+						</section>
+						<section
+							class="settings__social__box b1-grey d-flex align-center p-relative rad-6 mb-15"
+						>
+							<i class="fa-brands fa-linkedin bg-eee h-full rad-6"></i>
+							<input
+								class="w-full p-10 bg-eee b-none rad-6"
+								type="text"
+								placeholder="Linkedin username"
+							/>
+						</section>
+						<section
+							class="settings__social__box b1-grey d-flex align-center p-relative rad-6"
+						>
+							<i class="fa-brands fa-youtube bg-eee h-full rad-6"></i>
+							<input
+								class="w-full p-10 bg-eee b-none rad-6"
+								type="text"
+								placeholder="Youtube username"
+							/>
+						</section>
+					</article>
+
+					<!-- || WIDGETS CONTROL WIDGET -->
+					<article class="settings__widgets p-20 bg-white rad-10">
+						<h2 class="mb-10">Widgets Control</h2>
+						<p class="mb-20 c-grey fs-15">Show/Hide Widgets</p>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="quickDraft"
+								id="quickDraft"
+								checked
+							/>
+							<label class="p-relative" for="quickDraft"
+								>Quick Draft</label
+							>
+						</section>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="yearlyTargets"
+								id="yearlyTargets"
+								checked
+							/>
+							<label class="p-relative" for="yearlyTargets"
+								>Yearly Targets</label
+							>
+						</section>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="ticketStats"
+								id="ticketStats"
+								checked
+							/>
+							<label class="p-relative" for="ticketStats"
+								>Tickets Statistics</label
+							>
+						</section>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="latestNews"
+								id="latestNews"
+							/>
+							<label class="p-relative" for="latestNews"
+								>Latest News</label
+							>
+						</section>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="latestTasks"
+								id="latestTasks"
+							/>
+							<label class="p-relative" for="latestTasks"
+								>Latest Tasks</label
+							>
+						</section>
+						<section class="mb-15 d-flex align-center">
+							<input
+								class="toggle-checkbox"
+								type="checkbox"
+								name="searchItems"
+								id="searchItems"
+								checked
+							/>
+							<label class="p-relative" for="searchItems"
+								>Top Search Items</label
+							>
+						</section>
+					</article>
+
+					<!-- || BACKUP WIDGET -->
+					<article class="setting__backup p-20 bg-white rad-10">
+						<h2 class="mb-10">Backup Manager</h2>
+						<p class="mb-20 c-grey fs-15">
+							Control backup time and location
+						</p>
+						<section class="settings__backup__date mb-10">
+							<input
+								class="toggle-checkbox"
+								type="radio"
+								id="daily"
+								name="backupDate"
+								value="Daily"
+								checked
+							/>
+							<label class="p-relative" for="daily">Daily</label>
+						</section>
+						<section class="settings__backup__date mb-10">
+							<input
+								class="toggle-checkbox"
+								type="radio"
+								id="weekly"
+								name="backupDate"
+								value="Weekly"
+							/>
+							<label class="p-relative" for="weekly">Weekly</label>
+						</section>
+						<section class="settings__backup__date mb-10">
+							<input
+								class="toggle-checkbox"
+								type="radio"
+								id="monthly"
+								name="backupDate"
+								value="Monthly"
+							/>
+							<label class="p-relative" for="monthly">Monthly</label>
+						</section>
+						<section
+							class="settings__backup__servers mt-20 pt-20 d-flex align-center gap-20 text-center"
+						>
+							<section class="settings__backup__server rad-10 w-full">
+								<input
+									class="toggle-checkbox"
+									type="radio"
+									name="server"
+									id="megaman"
+								/>
+
+								<label for="megaman" class="d-block p-20 rad-6">
+									<i
+										class="fa-solid fa-server d-block w-full mb-10"
+									></i>
+									Megaman
+								</label>
+							</section>
+							<section class="settings__backup__server rad-10 w-full">
+								<input
+									class="toggle-checkbox"
+									type="radio"
+									name="server"
+									id="cloudflare"
+									checked
+								/>
+								<label for="cloudflare" class="d-block p-20 rad-6">
+									<i
+										class="fa-solid fa-server d-block w-full mb-10"
+									></i>
+									Cloudflare
+								</label>
+							</section>
+							<section class="settings__backup__server rad-10 w-full">
+								<input
+									class="toggle-checkbox"
+									type="radio"
+									name="server"
+									id="sigma"
+								/>
+
+								<label for="sigma" class="d-block p-20 rad-6">
+									<i
+										class="fa-solid fa-server d-block w-full mb-10"
+									></i>
+									Sigma
+								</label>
+							</section>
+						</section>
+					</article>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
